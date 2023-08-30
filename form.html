@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Actividad clase 10 Roberto Vélez</title>
+  <title>Actividad clase 11 Roberto Vélez</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <script src="https://kit.fontawesome.com/c9242a05e7.js" crossorigin="anonymous"></script>
 </head>
@@ -26,7 +26,7 @@
       <p>Agrega tu personaje favorito completando las opciones</p>
       <div class="contenedorgeneral">
         <div class="contenedorcampos">
-          <label for="nombre">*Nombre</label><br>
+          <label for="nombre">*Nombre</label>
           <input type="text" name="nombre" id="nombre" required>
           <br>
           <label for="fecha">Fecha</label>
@@ -35,8 +35,16 @@
           <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
         </div>
         <div class="contenedorcampos">
-          <label for="especie">*Especie</label><br>
-          <input type="text" name="especie" id="especie" placeholder="Especie" class="inputField" required>
+          
+          <label for="especie">Especie</label>
+                    <select name="especie" id="especie" class="select-especie">
+                        <option value="aire">Aire</option>
+                        <option value="tierra">Tierra</option>
+                        <option value="agua">Agua</option>
+                        <option value="fuego">Fuego</option>
+                        <option value="avatar">Avatar</option>
+                    </select>
+          <br>
           <br>
           <label for="archivo">Agregar Foto</label>
           <input type="file" name="archivo" id="archivo">
